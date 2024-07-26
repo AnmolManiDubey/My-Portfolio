@@ -1,0 +1,82 @@
+:root {
+  --primary-bg-color: #000;
+  --secondary-bg-color: #111;
+  --text-color: #fff;
+  --link-color: #1e90ff;
+  --font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+nav {
+  background: var(--secondary-bg-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--link-color);
+}
+
+.container {
+  padding: 5rem 2rem;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Responsive Design Example */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .container, section {
+    padding: 3rem 1rem;
+  }
+}
