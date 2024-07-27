@@ -74,7 +74,7 @@ const Contact = () => (
         </a>
       </ContactItem>
       <ContactItem>
-        <a href="https://drive.google.com/drive/folders/1atEM2cWxJUuqB6BKhUi0W3BDdb1H9Wtj" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+        <a href="https://drive.google.com/file/d/1jiwVxczxCveLRSONqMmdI1L1T7vPQFM7/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
           <FaFileAlt /> Resume
         </a>
       </ContactItem>
